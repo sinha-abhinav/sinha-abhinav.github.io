@@ -245,5 +245,8 @@ button.link {
 
 ul.inline-links > li {
     display:inline;
+}
+
+ul.inline-links {
     list-style:none;
 }
