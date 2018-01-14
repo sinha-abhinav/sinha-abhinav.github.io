@@ -237,3 +237,8 @@ text-align: justify;
 .text-justify {
     text-align: justify;
 }
+
+button.link {
+     background:none;
+     border:none; 
+}
