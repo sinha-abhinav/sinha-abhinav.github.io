@@ -242,3 +242,8 @@ button.link {
      background:none;
      border:none; 
 }
+
+ul.inline-links > li {
+    display:inline;
+    list-style:none;
+}
