@@ -19,6 +19,38 @@ $(document).ready(function(){
       var posi = $(link).offset().top+20;
       $('body,html').animate({scrollTop:posi},700);
     })
+
+    $('#pub1').prop('disabled',true).removeClass('btn btn-default').addClass('btn btn-success');
+    $('#pub2').prop('disabled',false).removeClass('btn btn-success').addClass('btn btn-default');
+    $('#pub3').prop('disabled',false).removeClass('btn btn-success').addClass('btn btn-default');
+    $('#pub_Refereed_Journals').show();
+    $('#pub_Conference_Proceedings').hide();
+    $('#pub_Book_Chapters').hide();
     
-    
-});
+    $('#pub1').click(function() {
+      $('#pub1').prop('disabled',true).removeClass('btn btn-default').addClass('btn btn-success');
+      $('#pub2').prop('disabled',false).removeClass('btn btn-success').addClass('btn btn-default');
+      $('#pub3').prop('disabled',false).removeClass('btn btn-success').addClass('btn btn-default');
+      $('#pub_Refereed_Journals').show();
+      $('#pub_Conference_Proceedings').hide();
+      $('#pub_Book_Chapters').hide();
+    })
+
+    $('#pub2').click(function() {
+      $('#pub2').prop('disabled',true).removeClass('btn btn-default').addClass('btn btn-success');
+      $('#pub1').prop('disabled',false).removeClass('btn btn-success').addClass('btn btn-default');
+      $('#pub3').prop('disabled',false).removeClass('btn btn-success').addClass('btn btn-default');
+      $('#pub_Refereed_Journals').hide();
+      $('#pub_Conference_Proceedings').show();
+      $('#pub_Book_Chapters').hide();
+    })
+
+    $('#pub3').click(function() {
+      $('#pub3').prop('disabled',true).removeClass('btn btn-default').addClass('btn btn-success');
+      $('#pub1').prop('disabled',false).removeClass('btn btn-success').addClass('btn btn-default');
+      $('#pub2').prop('disabled',false).removeClass('btn btn-success').addClass('btn btn-default');
+      $('#pub_Refereed_Journals').hide();
+      $('#pub_Conference_Proceedings').hide();
+      $('#pub_Book_Chapters').show();
+    })
+  })
