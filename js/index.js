@@ -20,6 +20,8 @@ $(document).ready(function(){
       $('body,html').animate({scrollTop:posi},700);
     })
 
+    // Research publications code begin ------------------------------------------------------------
+
     $('#pub1').prop('disabled',true).removeClass('btn btn-default').addClass('btn btn-success');
     $('#pub2').prop('disabled',false).removeClass('btn btn-success').addClass('btn btn-default');
     $('#pub3').prop('disabled',false).removeClass('btn btn-success').addClass('btn btn-default');
@@ -53,4 +55,12 @@ $(document).ready(function(){
       $('#pub_Conference_Proceedings').hide();
       $('#pub_Book_Chapters').show();
     })
+
+      // Research publications code end ------------------------------------------------------------
+
+  // Projects code begin ---------------------------------------------------------------------------
+
+    $('#proj1').click(function() {console.log('Clicked')})
+
+    
   })
