@@ -250,3 +250,19 @@ ul.inline-links > li {
 ul.inline-links {
     list-style:none;
 }
+
+.active-proj {
+  background-color:rgb(215, 221, 158);
+  color:black;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.inactive-proj {
+  background-color: none;
+  color:black;
+}
+
+#project-links > ol > li {
+  padding: 5px;
+}

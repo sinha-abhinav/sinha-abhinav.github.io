@@ -60,7 +60,46 @@ $(document).ready(function(){
 
   // Projects code begin ---------------------------------------------------------------------------
 
-    $('#proj1').click(function() {console.log('Clicked')})
+    var projDom = $('.single-project');
+    var projLinks = $('#project-links>li');
 
+    (function() {
+
+      $(projLinks[0]).removeClass('inactive-proj').addClass('active-proj');
+      var restLinks = projLinks.slice();
+      restLinks.splice(0,1);
+      restLinks.each(function(index) {
+        $(this).removeClass('active-proj').addClass('inactive-proj');
+      })
+
+      $(projDom[0]).show();
+      var restProj = projDom.slice();
+      restProj.splice(0,1);
+      restProj.each(function(index) {
+        $(this).hide();
+      })
+    })();
+
+    projLinks.each(function(index) {
+
+      $(this).click(function () {
+
+        $(projLinks[index]).removeClass('inactive-proj').addClass('active-proj');
+        var restLinks = projLinks.slice();
+        restLinks.splice(index,1);
+        restLinks.each(function(index) {
+          $(this).removeClass('active-proj').addClass('inactive-proj');
+        })
+
+        $(projDom[index]).show();
+        var restProj = projDom.slice();
+        restProj.splice(index,1);
+        restProj.each(function(index) {
+          $(this).hide();
+        })
+
+      })
+    })
     
+
   })
