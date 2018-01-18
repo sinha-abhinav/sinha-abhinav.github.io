@@ -252,10 +252,10 @@ ul.inline-links {
 }
 
 .active-proj {
-  background-color:rgb(215, 221, 158);
+  background-color:rgb(192, 230, 236);
   color:black;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .inactive-proj {
@@ -264,5 +264,5 @@ ul.inline-links {
 }
 
 #project-links > ol > li {
-  padding: 5px;
+  padding: 15px;
 }
