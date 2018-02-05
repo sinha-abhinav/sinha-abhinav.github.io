@@ -52,7 +52,9 @@ h1,h2,h3,h4 {
   vertical-align:middle;
 }
 header {
-  background: linear-gradient(to bottom right, #159957, #155799);;
+ /* background: linear-gradient(to bottom right, #159957, #155799);; original*/ 
+ /* background: linear-gradient(to bottom right, #616161, #E6DADA);; */
+	background: linear-gradient(to bottom right, #13547a, #80d0c7);;
   height:200px;
   color:#CCCCCC;
 }
@@ -200,6 +202,13 @@ section {
   -o-background-size: cover;
   background-size: cover;
 }
+.bg-proj{
+   background: url('https://static.pexels.com/photos/356043/pexels-photo-356043.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .text-danger{
 color: #f35958 !important;
 }
@@ -265,4 +274,10 @@ ul.inline-links {
 
 #project-links > li {
   padding: 10px;
+}
+#projectlinkstext {
+	color: black
+}
+#panelheading {
+	background-color: white
 }
