@@ -209,6 +209,13 @@ section {
   -o-background-size: cover;
   background-size: cover;
 }
+.bg-courses{
+   background: url('https://images.pexels.com/photos/256546/pexels-photo-256546.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .text-danger{
 color: #f35958 !important;
 }
@@ -271,6 +278,7 @@ ul.inline-links {
   background-color: none;
   color:black;
 }
+
 
 #project-links > li {
   padding: 10px;
