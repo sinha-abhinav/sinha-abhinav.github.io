@@ -299,3 +299,34 @@ ul.inline-links {
 #resume-link {
 	color: crimson;
 }
+#contact2 {
+        padding-left: 65px;
+    }
+    
+    #contact2 h3 {
+        font-family: "helvetica neue", helvetica, sans-serif;
+        font-size: 22px;
+        line-height: 22px;
+        font-stretch: normal;
+        font-weight: normal;
+        font-style: normal;
+        font-variant-ligatures: normal;
+        font-variant-caps: normal;
+        font-variant-numeric: normal;
+        font-variant-east-asian: normal;
+    }
+    
+    #contact2 table>tr>td {
+        font-family: "helvetica neue", helvetica, sans-serif;
+        font-stretch: normal;
+        font-weight: normal;
+        font-style: normal;
+        font-variant-ligatures: normal;
+        font-variant-caps: normal;
+        font-variant-numeric: normal;
+        font-variant-east-asian: normal;
+    }
+    
+    table {
+        border-collapse: separate;
+    }
