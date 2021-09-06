@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <!-- meta tags -->
     <meta charset="utf-8" />
     <meta name="author" content="Abhinav Sinha" />
@@ -10,7 +9,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <meta name="keywords" content="navigation, guidance, navigation and guidance, AE410, AE641" />
+    <meta name="keywords" content="formation, multiagent" />
     <meta
       name="description"
       content="Abhinav Sinha - Researcher in Control Systems"
@@ -46,8 +45,8 @@
       MathJax = {
         tex: {
           inlineMath: [
-            ['$', '$'],
-            ['\\(', '\\)'],
+            ["$", "$"],
+            ["\\(", "\\)"],
           ],
         },
       };
@@ -57,7 +56,6 @@
       async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
     ></script>
-
   </head>
   <body>
     <!-- start page loading -->
@@ -81,9 +79,16 @@
                     <div class="navbar-header navbar-header-custom">
                       <!-- start logo -->
                       <a href="index.html#home" class="navbar-brand logo4">
-                      <h6 style="margin-top: 7%; text-transform: uppercase; font-family: Big John; color: #fff">
-                        Abhinav Sinha
-                      </h6>
+                        <h6
+                          style="
+                            margin-top: 7%;
+                            text-transform: uppercase;
+                            font-family: Big John;
+                            color: #fff;
+                          "
+                        >
+                          Abhinav Sinha
+                        </h6>
                       </a>
                       <!-- end logo -->
                     </div>
@@ -94,7 +99,7 @@
                     <ul
                       class="navbar-nav ml-auto"
                       id="nav"
-                      style="display: none;"
+                      style="display: none"
                     >
                       <li>
                         <a href="index.html#home">Home</a>
@@ -139,17 +144,31 @@
           <div class="row">
             <div class="col-lg-7 sm-margin-40px-bottom">
               <h1
-                class="font-size50 md-font-size42 sm-font-size38 xs-font-size30 font-weight-800 text-white"
+                class="
+                  font-size50
+                  md-font-size42
+                  sm-font-size38
+                  xs-font-size30
+                  font-weight-800
+                  text-white
+                "
               >
-              Researcher in Control Systems.
+                Researcher in Control Systems.
               </h1>
               <p
-                class="width-95 xs-width-100 font-size16 xs-display-none line-height-30 xs-font-size14 xs-line-height-26 font-size20 text-white"
-              >
-                
-              </p>
+                class="
+                  width-95
+                  xs-width-100
+                  font-size16
+                  xs-display-none
+                  line-height-30
+                  xs-font-size14 xs-line-height-26
+                  font-size20
+                  text-white
+                "
+              ></p>
               <div class="margin-30px-top sm-margin-25px-top">
-                <a href="#course-section" class="butn theme white-hover"
+                <a href="#research-section" class="butn theme white-hover"
                   ><span>Get Started</span></a
                 >
               </div>
@@ -165,32 +184,44 @@
       </section>
       <!-- end banner section-->
 
-      <!-- start course section -->
-      <section class="lg" id="course-section">
+      <!-- start research section -->
+      <section class="lg" id="research-section">
         <div class="container">
           <div class="section-heading title-style7">
-            <h4 class="no-margin-bottom" style="font-family: Dosis-SemiBold;">
-              AE 410/641: Navigation and Guidance
+            <h4 class="no-margin-bottom" style="font-family: Dosis-SemiBold">
+              Formation Control of Multiagent Systems
             </h4>
           </div>
-          <p style="text-align:justify; font-size: 18px;">
-            This course can be divided into two subcourses of navigation techniques, and guidance processing. In the first part, i.e., naviagtion techniques, 
-            we are focused on determining the geographical position of a vehicle in order to guide it from one point to another. We will familiarize ourselves with 
-            various coordinate transformations and their representations, followed by devices such as inertial navigation sensors, global positioning system, etc. In the 
-            second part, we shall focus on guidance of autonomous vehicles, i.e., we shall study strategies using which an object is made
-            to follow a nominal trajectory in the presence of off-nominal conditions. These off-nominal conditions, in the context of aerospace engineering, may arise due to a number
-            of factors such as wind gust, turbulence, navigational anomalies, change in weather
-            conditions during flight, etc. More intuitively, when we will discuss guidance, we will generally
-            consider an object (pursuer/interceptor) and a goal (target/evader). A general requirement on the object's part will be such that it attains a trajectory to 
-            come closer to the goal as time progresses. 
+          <p style="text-align: justify; font-size: 18px">
+            Formation control requires that the autonomous agents reach a
+            specified formation shape or a geometrical cohesion under available
+            information. The relevant information is usually the states of
+            agents like position, velocity, and orientation, which are
+            manipulated/controlled to achieve a geometric shape. The formation
+            geometry can either be fixed or time-varying depending on the
+            application.
           </p>
-          <p style="text-align:justify; font-size: 18px;">
-            Course materials are available at IITB Moodle.
-            </p>
-             
+          <p style="text-align: justify; font-size: 18px">
+            Our current research focuses on ensuring multiagent formation in the
+            presence of cooperative and antagonistic agents. Another direction
+            in which we focus aims to address the multiagent formation problem
+            under network resource constraints.
+          </p>
+
+          <!-- <figure>
+            <img
+              src="img/research/enggeo-1.png"
+              style="width: 75%; margin-left: 15%; margin-bottom: 2%"
+            />
+            <figcaption style="text-align: center; font-weight: bold">
+              Illustration of target-attacker-defender scenario.
+            </figcaption>
+          </figure> -->
+
+          <p style="text-align: justify; font-size: 18px"></p>
         </div>
       </section>
-      <!-- end course section -->
+      <!-- end research section -->
 
       <div class="separator-line-horrizontal-full bg-medium-light-gray"></div>
 
@@ -223,6 +254,7 @@
               <h3 class="footer-title-style9">Sitemap</h3>
               <div>
                 <ul class="footer-list-style3">
+                  <!-- <li><a href="#!">About Us</a></li> -->
                   <li>
                     <i class="fa fa-angle-right" aria-hidden="true"></i
                     ><a href="index.html#about"> About</a>
@@ -308,7 +340,8 @@
                   &copy; Abhinav Sinha
                   <script>
                     document.write(new Date().getFullYear());
-                  </script>. All Rights Reserved.
+                  </script>
+                  . All Rights Reserved.
                 </p>
               </div>
               <div class="col-md-6 text-right xs-text-center">
@@ -326,7 +359,7 @@
     <!-- end main-wrapper section -->
 
     <!-- start scroll to top -->
-    <a href="#course-section" class="scroll-to-top"
+    <a href="#research-section" class="scroll-to-top"
       ><i class="fa fa-angle-up" aria-hidden="true"></i
     ></a>
     <!-- end scroll to top -->
@@ -338,6 +371,5 @@
 
     <!-- custom scripts -->
     <script src="js/scroller.js"></script>
-
   </body>
 </html>
