@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <!-- meta tags -->
     <meta charset="utf-8" />
     <meta name="author" content="Abhinav Sinha" />
@@ -46,8 +45,8 @@
       MathJax = {
         tex: {
           inlineMath: [
-            ['$', '$'],
-            ['\\(', '\\)'],
+            ["$", "$"],
+            ["\\(", "\\)"],
           ],
         },
       };
@@ -57,7 +56,6 @@
       async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
     ></script>
-
   </head>
   <body>
     <!-- start page loading -->
@@ -81,9 +79,16 @@
                     <div class="navbar-header navbar-header-custom">
                       <!-- start logo -->
                       <a href="index.html#home" class="navbar-brand logo4">
-                      <h6 style="margin-top: 7%; text-transform: uppercase; font-family: Big John; color: #fff">
-                        Abhinav Sinha
-                      </h6>
+                        <h6
+                          style="
+                            margin-top: 7%;
+                            text-transform: uppercase;
+                            font-family: Big John;
+                            color: #fff;
+                          "
+                        >
+                          Abhinav Sinha
+                        </h6>
                       </a>
                       <!-- end logo -->
                     </div>
@@ -94,7 +99,7 @@
                     <ul
                       class="navbar-nav ml-auto"
                       id="nav"
-                      style="display: none;"
+                      style="display: none"
                     >
                       <li>
                         <a href="index.html#home">Home</a>
@@ -139,15 +144,29 @@
           <div class="row">
             <div class="col-lg-7 sm-margin-40px-bottom">
               <h1
-                class="font-size50 md-font-size42 sm-font-size38 xs-font-size30 font-weight-800 text-white"
+                class="
+                  font-size50
+                  md-font-size42
+                  sm-font-size38
+                  xs-font-size30
+                  font-weight-800
+                  text-white
+                "
               >
-              Researcher in Control Systems.
+                Researcher in Control Systems.
               </h1>
               <p
-                class="width-95 xs-width-100 font-size16 xs-display-none line-height-30 xs-font-size14 xs-line-height-26 font-size20 text-white"
-              >
-                
-              </p>
+                class="
+                  width-95
+                  xs-width-100
+                  font-size16
+                  xs-display-none
+                  line-height-30
+                  xs-font-size14 xs-line-height-26
+                  font-size20
+                  text-white
+                "
+              ></p>
               <div class="margin-30px-top sm-margin-25px-top">
                 <a href="#research-section" class="butn theme white-hover"
                   ><span>Get Started</span></a
@@ -169,31 +188,47 @@
       <section class="lg" id="research-section">
         <div class="container">
           <div class="section-heading title-style7">
-            <h4 class="no-margin-bottom" style="font-family: Dosis-SemiBold;">
+            <h4 class="no-margin-bottom" style="font-family: Dosis-SemiBold">
               Consensus over Pseudo-undirected Graphs
             </h4>
           </div>
-          <p style="text-align:justify; font-size: 18px;">
-            In multiagent systems, some agents will have larger initial state values, while others may have smaller initial state values.
-            The distributed leaderless framework with undirected graphs can only ensure a consensus value which is at the average of the 
-            agents' initial states. Sometimes, this may emerge as a restrictive requirement. One way to tackle this is to adopt a leader-follower scheme, 
-            and providing a wide range of arbitrary reference values to the leader. That said, the situation becomes over-dependent on a single agent. In either
-            case, some agents do not affect the consensus value. We focus on a fully distributed cooperative behavior that also guarantees interception at values which
-            are not at the average of the agents' initial states. With the proposed nature of interaction, each agent has a stake in the consensus value.
-             Physical constraints on actuators, such as bounded lateral acceleration of vehicles, are also respected when agents are connected over the proposed pseudo-undirected graph.
+          <p style="text-align: justify; font-size: 18px">
+            In multiagent systems, some agents will have larger initial state
+            values, while others may have smaller initial state values. The
+            distributed leaderless framework with undirected graphs can only
+            ensure a consensus value which is at the average of the agents'
+            initial states. Sometimes, this may emerge as a restrictive
+            requirement. One way to tackle this is to adopt a leader-follower
+            scheme, and providing a wide range of arbitrary reference values to
+            the leader. That said, the situation becomes over-dependent on a
+            single agent. In either case, some agents do not affect the
+            consensus value. We focus on a fully distributed cooperative
+            behavior that also guarantees interception at values which are not
+            at the average of the agents' initial states. With the proposed
+            nature of interaction, each agent has a stake in the consensus
+            value. Physical constraints on actuators, such as bounded lateral
+            acceleration of vehicles, are also respected when agents are
+            connected over the proposed pseudo-undirected graph.
           </p>
 
           <figure>
-            <img src="img/research/pugCycle.png" style="width: 30%; margin-left: 33%;">
-            <figcaption style="text-align: center; font-weight:bold;">
-              A pseudo-undirected cycle with hetereogeneous (non-zero) weights. Each $w_{ij} \neq w_{ji}$ and 
-               $w_{ij}w_{ji} = 0$ if and only if $w_{ij}=0$ and $w_{ji}=0$.
-              </figcaption>
+            <img
+              src="img/research/pugCycle.png"
+              style="width: 30%; margin-left: 33%"
+            />
+            <figcaption style="text-align: center; font-weight: bold">
+              A pseudo-undirected cycle with hetereogeneous (non-zero) weights.
+              Each $w_{ij} \neq w_{ji}$ and $w_{ij}w_{ji} = 0$ if and only if
+              $w_{ij}=0$ and $w_{ji}=0$.
+            </figcaption>
           </figure>
-          <p style="text-align:justify; font-size: 18px;">
-            We also analyze the extent to which a single edge weight can be (negatively) perturbed without agents losing consensus. A direct application of this work can be seen in cooperative simultaneous interception of a target when the common time of interception is desired larger than the largest time-to-go in the swarm.
+          <p style="text-align: justify; font-size: 18px">
+            We also analyze the extent to which a single edge weight can be
+            (negatively) perturbed without agents losing consensus. A direct
+            application of this work can be seen in cooperative simultaneous
+            interception of a target when the common time of interception is
+            desired larger than the largest time-to-go in the swarm.
           </p>
-          
         </div>
       </section>
       <!-- end research section -->
@@ -206,23 +241,30 @@
           <div class="row">
             <div class="col-lg-4 col-md-6 sm-margin-30px-bottom">
               <h3 class="footer-title-style9">Mailing Address</h3>
-              <address class="width-85 no-margin no-padding">
-                Intelligent Systems and Control Lab, Department of Aerospace
-                Engineering, Indian Institute of Technology Bombay, Powai -
-                400076, Mumbai, India
+              <address class="width-145 no-margin no-padding">
+                Unmanned Systems Lab<br />
+                Department of Electrical & Computer Engineering<br />
+                The University of Texas at San Antonio<br />
+                One UTSA Circle, San Antonio<br />
+                Texas- 78249, USA
               </address>
               <br />
               <i class="fa fa-envelope" aria-hidden="true"></i
-              ><a
-                href="mailto:abhinavsinha@aero.iitb.ac.in"
-                style="margin-left: 3%"
-                >abhinavsinha@aero.iitb.ac.in</a
+              ><a href="mailto:abhinav.sinha@utsa.edu" style="margin-left: 3%"
+                >abhinav.sinha@utsa.edu</a
               >
-              <br />
+              <!-- <br />
+              <i class="fa fa-envelope" aria-hidden="true"></i
+                ><a
+                  href="mailto:abhinavsinha@aero.iitb.ac.in"
+                  style="margin-left: 3%"
+                  >abhinavsinha@aero.iitb.ac.in</a
+                >
+                <br />
               <i class="fa fa-envelope" aria-hidden="true"></i
               ><a href="mailto:sinha.abhinav@iitb.ac.in" style="margin-left: 3%"
                 >sinha.abhinav@iitb.ac.in</a
-              >
+              > -->
             </div>
 
             <div class="col-lg-3 col-md-6 sm-margin-30px-bottom">
@@ -314,7 +356,8 @@
                   &copy; Abhinav Sinha
                   <script>
                     document.write(new Date().getFullYear());
-                  </script>. All Rights Reserved.
+                  </script>
+                  . All Rights Reserved.
                 </p>
               </div>
               <div class="col-md-6 text-right xs-text-center">
@@ -344,6 +387,5 @@
 
     <!-- custom scripts -->
     <script src="js/scroller.js"></script>
-
   </body>
 </html>
