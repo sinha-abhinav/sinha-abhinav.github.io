@@ -504,6 +504,8 @@ select:focus {
   border: none;
   background-size: 300% 100%;
   background: #2a8ae2;
+  position: relative; /* Ensure it's above the banner */
+  z-index: 10; /* Stack on top of the banner */
 
   border-radius: 50px;
   -moz-transition: all 0.4s ease-in-out;
