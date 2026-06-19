@@ -1275,7 +1275,7 @@
                   </div>
                 </div> -->
 
-                <div class="post-slide8">
+                <!-- <div class="post-slide8">
                   <div class="post-content">
                     <h3 class="post-title">
                       <p>Aug 2025</p>
@@ -1345,7 +1345,7 @@
                       WF-IoT 2025.
                     </p>
                   </div>
-                </div>
+                </div> -->
 
                 <!-- <div class="post-slide8">
                   <div class="post-content">
@@ -1652,5 +1652,98 @@
 
     <!-- custom scripts -->
     <script src="js/main.js"></script>
+
+    <script>
+  (function () {
+    const numberOfItems = 5;
+    const sliderSelector = "#news-slider8";
+
+    function cleanText(text) {
+      return text.replace(/\s+/g, " ").trim();
+    }
+
+    function createSlide(dateText, descriptionText) {
+      return `
+        <div class="post-slide8">
+          <div class="post-content">
+            <h3 class="post-title">
+              <p>${dateText}</p>
+            </h3>
+            <p class="post-description">
+              ${descriptionText}
+            </p>
+          </div>
+        </div>
+      `;
+    }
+
+    function initializeCarousel() {
+      const $slider = $(sliderSelector);
+
+      if (!$slider.length || !$.fn.owlCarousel) {
+        return;
+      }
+
+      /*
+       * If js/news-slider.js has already initialized this carousel,
+       * destroy it before rebuilding from the dynamic news items.
+       */
+      if ($slider.data("owlCarousel")) {
+        $slider.data("owlCarousel").destroy();
+        $slider.removeData("owlCarousel");
+      }
+
+      $slider.owlCarousel({
+        autoPlay: true,
+        items: 3,
+        itemsDesktop: [1199, 3],
+        itemsDesktopSmall: [980, 2],
+        itemsTablet: [768, 2],
+        itemsMobile: [600, 1],
+        navigation: false,
+        pagination: true
+      });
+    }
+
+    fetch("news.html")
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error("Could not load news.html");
+        }
+        return response.text();
+      })
+      .then(function (htmlText) {
+        const parser = new DOMParser();
+        const newsDocument = parser.parseFromString(htmlText, "text/html");
+
+        const newsItems = Array.from(
+          newsDocument.querySelectorAll("#content ul li")
+        ).slice(0, numberOfItems);
+
+        const slides = newsItems.map(function (item) {
+          const dateNode = item.querySelector("b");
+          const dateText = dateNode
+            ? cleanText(dateNode.textContent).replace(/:$/, "")
+            : "News";
+
+          if (dateNode) {
+            dateNode.remove();
+          }
+
+          const descriptionText = cleanText(item.textContent).replace(/^:\s*/, "");
+
+          return createSlide(dateText, descriptionText);
+        });
+
+        const slider = document.querySelector(sliderSelector);
+        slider.innerHTML = slides.join("");
+
+        initializeCarousel();
+      })
+      .catch(function (error) {
+        console.error("News slider could not be loaded:", error);
+      });
+  })();
+</script>
   </body>
 </html>
