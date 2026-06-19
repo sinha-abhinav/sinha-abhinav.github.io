@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- meta tags -->
@@ -174,34 +174,38 @@
         <div class="container">
           <div class="section-heading title-style7">
             <h4 class="no-margin-bottom" style="font-family: Dosis-SemiBold">
-              Resilience and Robustness in Networked Systems
+              Resilience, Robustness, and Safety in Networked Systems
             </h4>
           </div>
 
           <p style="text-align: justify; font-size: 18px">
-            Resilience and robustness hold paramount importance in the realm of
-            autonomous and cyber-physical systems, where the reliable and secure
-            operation of interconnected components is critical. Resilience
-            refers to the system's ability to withstand disturbances, failures,
-            or attacks while maintaining its essential functionalities and
-            promptly recovering to a desired operational state. It involves
-            fault tolerance mechanisms, adaptive control strategies, and dynamic
-            reconfiguration techniques to ensure system continuity. Robustness,
-            in the context of networked autonomous and cyber-physical systems,
-            denotes the system's ability to perform optimally and reliably under
-            varying conditions, including uncertainties in inputs, environmental
-            changes, or the presence of faulty or malicious components.
-            Achieving robustness often entails redundancy, error detection and
-            correction, feedback control mechanisms, and the ability to
-            gracefully adapt to the desired performance when faced with
-            challenging scenarios.
+            Resilience, robustness, and safety are of paramount importance in
+            autonomous and cyber-physical systems, where the reliable, secure,
+            and constraint-aware operation of interconnected components is
+            critical. Resilience refers to the system’s ability to withstand
+            disturbances, failures, or attacks while maintaining essential
+            functionality and recovering promptly to a desired operational
+            state. It involves fault-tolerance mechanisms, adaptive control
+            strategies, and dynamic reconfiguration techniques to ensure
+            continuity of operation. Robustness, in the context of networked
+            autonomous and cyber-physical systems, denotes the ability to
+            perform reliably under varying conditions, including input
+            uncertainties, environmental changes, modeling errors, and the
+            presence of faulty or malicious components. Safety complements these
+            notions by ensuring that system trajectories, decisions, and
+            interactions remain within prescribed admissible limits, even in the
+            presence of uncertainty and adverse operating conditions. Achieving
+            these objectives often requires redundancy, error detection and
+            correction, feedback control mechanisms, constraint-enforcing
+            control architectures, and the ability to maintain or recover
+            desired performance when faced with challenging scenarios.
           </p>
 
           <h5
             class="no-margin-bottom"
             style="font-family: Dosis-SemiBold; text-decoration: underline"
           >
-            Consensus over Pseudo-undirected Graphs
+            Robustness of Consensus over Pseudo-undirected Graphs
           </h5>
 
           <p style="text-align: justify; font-size: 18px">
@@ -250,6 +254,27 @@
               <b>Abhinav Sinha</b>, Dwaipayan Mukherjee, and Shashi Ranjan
               Kumar,
               <a
+                href="https://ieeexplore.ieee.org/document/11018241"
+                target="_blank"
+              >
+                "Consensus-driven Deviated Pursuit for Guaranteed Simultaneous
+                Interception of Moving Targets"</a
+              >, <i>IEEE Transactions on Aerospace and Electronic Systems</i>,
+              61 (5), 12826-12838, 2025.
+            </li>
+            <li style="list-style-type: disc; margin-left: 20px">
+              <b>Abhinav Sinha</b>, Dwaipayan Mukherjee, and Shashi Ranjan
+              Kumar,
+              <a href="" target="_blank">
+                "On Robustness of Consensus over Pseudo-Undirected Path
+                Graphs"</a
+              >, <i>Proceedings of the American Control Conference</i>, New
+              Orleans, Louisiana, USA, May 26-29, 2026, pp. 0-0.
+            </li>
+            <li style="list-style-type: disc; margin-left: 20px">
+              <b>Abhinav Sinha</b>, Dwaipayan Mukherjee, and Shashi Ranjan
+              Kumar,
+              <a
                 href="https://ieeexplore.ieee.org/abstract/document/9147677"
                 target="_blank"
               >
@@ -258,18 +283,110 @@
               >, <i>Proceedings of the American Control Conference</i>, Denver,
               Colorado, USA, July 1-3, 2020, pp. 3796-3801.
             </li>
+          </ul>
+
+          <div
+            class="separator-line-horrizontal-full bg-medium-light-gray"
+          ></div>
+
+          <p></p>
+
+          <h5
+            class="no-margin-bottom"
+            style="font-family: Dosis-SemiBold; text-decoration: underline"
+          >
+            Distributed Safe Consensus Under Input, State, and Output
+            Constraints
+          </h5>
+
+          <p style="text-align: justify; font-size: 18px">
+            We develop a control-theoretic framework for distributed safe
+            consensus of networked autonomous agents subject to simultaneous
+            input, state, and output constraints. The motivating problem arises
+            in multi-agent cyber-physical systems where agents must coordinate
+            over a communication graph while respecting actuator limits,
+            maintaining admissible internal behavior, and ensuring that measured
+            or task-relevant outputs remain inside prescribed safety envelopes.
+            The main theoretical contribution is a unified closed-loop analysis
+            showing that, for compact admissible sets of initial conditions, the
+            proposed controller simultaneously guarantees input admissibility,
+            forward invariance of the prescribed state/output safe set,
+            boundedness of all closed-loop signals, completeness of solutions,
+            and asymptotic synchronization to a designer-selected admissible
+            reference trajectory embedded within the agents' common safe set.
+          </p>
+
+          <figure>
+            <img
+              src="img/research/commonsafeset.png"
+              style="width: 50%; margin-left: 33%"
+            />
+            <figcaption style="text-align: left; font-weight: bold">
+              Set-based illustration of the proposed safe-consensus framework.
+              Each agent $i$ operates within its individual admissible set
+              $\mathcal{X}_i(t)$, all of which reside within the broader state
+              space $\mathcal{S}(t)$. The common safe core $\Omega(t)$ is
+              assumed to lie strictly inside the mutual intersection
+              $\bigcap_i\mathcal{X}_i(t)$. Coordination ensures the network
+              converges to a synchronized reference $x^\star(t)\in\Omega(t)$.
+            </figcaption>
+          </figure>
+
+          <p style="text-align: justify; font-size: 18px">
+            <b>Selected Publications</b>:
+          </p>
+          <ul>
             <li style="list-style-type: disc; margin-left: 20px">
-              <b>Abhinav Sinha</b>, Dwaipayan Mukherjee, and Shashi Ranjan
-              Kumar,
-              <a
-                href="https://ieeexplore.ieee.org/document/11018241"
-                target="_blank"
-              >
-                "Consensus-driven Deviated Pursuit for Guaranteed Simultaneous
-                Interception of Moving Targets"</a
-              >, <i>IEEE Transactions on Aerospace and Electronic Systems</i>,
-              2025.
+              <b>Abhinav Sinha</b>, and Shashi Ranjan Kumar,
+              <a href="https://arxiv.org/abs/2606.16116" target="_blank">
+                "Distributed Safe Consensus Under Asymmetric Input and
+                Time-Varying Output Constraints"</a
+              >, <i>arXiv 2606.16116</i>, 2026.
             </li>
+          </ul>
+
+          <div
+            class="separator-line-horrizontal-full bg-medium-light-gray"
+          ></div>
+
+          <p></p>
+
+          <h5
+            class="no-margin-bottom"
+            style="font-family: Dosis-SemiBold; text-decoration: underline"
+          >
+            Time-Critical Distributed Unknown-Input Observation for Networked
+            Autonomous Vehicles
+          </h5>
+
+          <p style="text-align: justify; font-size: 18px">
+            Autonomous vehicle networks increasingly operate in time-critical
+            environments in which state information must become reliable within
+            a prescribed planning horizon rather than only asymptotically. This
+            requirement arises in coordinated motion planning, distributed
+            replanning, non-cooperative target tracking, and terminal guidance,
+            where delayed convergence of state estimates can degrade path
+            generation, collision-avoidance decisions, or interception
+            performance. Motivated by these considerations, this research
+            develops a predefined-time distributed unknown-input observer for
+            leader-follower multi-agent systems over directed fixed and
+            switching communication networks, where only a subset of followers
+            has direct access to the leader state. The objective is to enable
+            every follower to reconstruct the leader's state exactly within a
+            user-prescribed time, independent of the initial estimation errors.
+          </p>
+
+          <p style="text-align: justify; font-size: 18px">
+            <b>Selected Publications</b>:
+          </p>
+          <ul>
+            <!-- <li style="list-style-type: disc; margin-left: 20px">
+              <b>Abhinav Sinha</b>, and Shashi Ranjan Kumar,
+              <a href="https://arxiv.org/abs/2606.16116" target="_blank">
+                "Distributed Safe Consensus Under Asymmetric Input and
+                Time-Varying Output Constraints"</a
+              >, <i>arXiv 2606.16116</i>, 2026.
+            </li> -->
           </ul>
         </div>
       </section>
@@ -295,8 +412,8 @@
               </address>
               <br />
               <i class="fa fa-envelope" aria-hidden="true"></i
-              ><a href="mailto:abhinav.sinha@utsa.edu" style="margin-left: 3%"
-                >sinhaab@ucmail.uc.edu</a
+              ><a href="mailto:abhinav.sinha@uc.edu" style="margin-left: 3%"
+                >abhinav.sinha@uc.edu</a
               >
               <!-- <br />
               <i class="fa fa-envelope" aria-hidden="true"></i
