@@ -69,7 +69,43 @@
     />
 
     <!-- news-slider js -->
-    <script src="js/news-slider.js"></script>
+    <!-- <script src="js/news-slider.js"></script> -->
+
+    <style>
+      #news-slider8.galacxis-news-carousel {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+      }
+
+      #news-slider8 .galacxis-news-track {
+        display: flex;
+        align-items: stretch;
+        transition: transform 600ms ease;
+        will-change: transform;
+      }
+
+      #news-slider8 .galacxis-news-item {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        padding: 0 15px;
+        box-sizing: border-box;
+      }
+
+      @media (max-width: 980px) {
+        #news-slider8 .galacxis-news-item {
+          flex-basis: 50%;
+          max-width: 50%;
+        }
+      }
+
+      @media (max-width: 600px) {
+        #news-slider8 .galacxis-news-item {
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -1111,7 +1147,9 @@
       <div class="separator-line-horrizontal-full bg-medium-light-gray"></div>
       <!-- end separator-->
 
-      <!-- start service section -->
+      
+
+<!-- start join us section -->
       <section class="lg" id="people">
         <div class="container">
           <div class="section-heading title-style7">
@@ -1126,28 +1164,8 @@
                 class="font-size18 sm-font-size15 line-height-30 sm-line-height-28 width-95 sm-width-100 xs-width-85 center-col margin-30px-bottom"
                 style="text-align: justify; font-family: Dosis-SemiBold"
               >
-                Thank you for your interest in the Guidance, Autonomy,
-                Learning, and Control for Intelligent Systems (GALACxIS) Lab at
-                the University of Cincinnati. Our group develops rigorous
-                theory, algorithms, and experimental capabilities for autonomous
-                systems, with emphasis on control theory, learning-enabled
-                autonomy, multi-agent coordination, guidance and navigation,
-                safety, resilience, and robustness in uncertain environments.
-              </p>
-              <p
-                class="font-size18 sm-font-size15 line-height-30 sm-line-height-28 width-95 sm-width-100 xs-width-85 center-col margin-30px-bottom"
-                style="text-align: justify; font-family: Dosis-SemiBold"
-              >
-                We are interested in working with motivated students and
-                researchers who enjoy mathematically rigorous problems with
-                relevance to autonomous vehicles, aerospace systems, robotics,
-                and networked cyber-physical systems. A strong fit with the lab
-                typically includes interest in one or more of the following
-                areas: nonlinear and distributed control, autonomous guidance,
-                navigation, and control, multi-agent systems, safety-critical
-                control, learning-enabled control, estimation and observers,
-                decision-making under uncertainty, and experimental validation
-                for aerial, robotic, or networked systems.
+                We are interested in working with self-motivated students and researchers who have a strong mathematical bent of mind, intellectual independence, and a genuine interest in developing rigorous control-theoretic foundations for autonomous systems. A strong fit with the lab includes curiosity, persistence, and enthusiasm for theoretically grounded problems with relevance to autonomous vehicles, learning-enabled decision-making, robotics, and networked cyber-physical systems.
+
               </p>
             </div>
           </div>
@@ -1158,47 +1176,17 @@
                 class="margin-10px-bottom font-size22 md-font-size18 xs-font-size16 work-together"
                 style="font-family: Dosis-Bold; font-weight: 800"
               >
-                Prospective Ph.D. Students
+                Prospective Ph.D./M.S. Students
               </h6>
               <p
                 class="font-size16 sm-font-size15 line-height-28 sm-line-height-26"
                 style="text-align: justify; font-family: Dosis-SemiBold"
               >
-                Prospective Ph.D. students should apply through the appropriate
-                University of Cincinnati graduate admissions process and
-                indicate their interest in the Department of Aerospace
-                Engineering and Engineering Mechanics and the GALACxIS Lab.
-                After applying, you may email Dr. Sinha with your CV,
-                unofficial transcript, a brief statement of research interests,
-                relevant technical background, and one or two GALACxIS research
-                areas or publications that interest you.
+                Prospective Ph.D. and M.S. students should apply through the appropriate university graduate admissions process and clearly indicate their interest in the GALACxIS Lab. Prospective Ph.D. applicants who have already submitted their application are welcome to email Dr. Sinha with a CV, unofficial transcript, brief statement of research interests, relevant technical background, and one or two GALACxIS research areas or publications that motivate their interest in the group. M.S. research opportunities depend on project availability, prior preparation, and fit with ongoing lab activities. Current or admitted M.S. students may contact Dr. Sinha with a CV, transcript, relevant coursework, technical skills, and a concise description of the research direction they hope to pursue.
+
               </p>
             </div>
 
-            <div class="col-md-6 sm-margin-30px-bottom">
-              <h6
-                class="margin-10px-bottom font-size22 md-font-size18 xs-font-size16 work-together"
-                style="font-family: Dosis-Bold; font-weight: 800"
-              >
-                Prospective M.S. Students
-              </h6>
-              <p
-                class="font-size16 sm-font-size15 line-height-28 sm-line-height-26"
-                style="text-align: justify; font-family: Dosis-SemiBold"
-              >
-                M.S. students interested in research with the GALACxIS Lab are
-                encouraged to apply through the appropriate University of
-                Cincinnati graduate program. Research opportunities may depend
-                on project availability, prior preparation, and alignment with
-                ongoing lab activities. Current or admitted M.S. students may
-                contact Dr. Sinha with a CV, transcript, relevant coursework,
-                technical skills, and a short description of the project area
-                they hope to pursue.
-              </p>
-            </div>
-          </div>
-
-          <div class="row margin-40px-bottom">
             <div class="col-md-6 sm-margin-30px-bottom">
               <h6
                 class="margin-10px-bottom font-size22 md-font-size18 xs-font-size16 work-together"
@@ -1210,15 +1198,39 @@
                 class="font-size16 sm-font-size15 line-height-28 sm-line-height-26"
                 style="text-align: justify; font-family: Dosis-SemiBold"
               >
-                Exceptional postdoctoral candidates with strong backgrounds in
-                control theory, autonomous systems, robotics, aerospace guidance
-                and control, distributed systems, learning-enabled control, or
-                related areas are encouraged to contact Dr. Sinha. Please
-                include a CV, publication list, a brief summary of your doctoral
-                research, future research interests, representative
-                publications, and possible fellowship or funding opportunities,
-                if applicable.
+                Postdoctoral inquiries are welcome from exceptional candidates with a strong publication record and research expertise in control theory, autonomous systems, robotics, guidance and control, distributed systems, learning-enabled control, or closely related areas. Interested candidates should contact Dr. Sinha with a CV, publication list, brief summary of doctoral research, statement of future research interests, selected representative publications, and any relevant fellowship or funding opportunities, if applicable.
+
               </p>
+            </div>
+          </div>
+
+          <div class="row margin-40px-bottom">
+            <div class="col-md-6 sm-margin-30px-bottom">
+              <h6
+                class="margin-10px-bottom font-size22 md-font-size18 xs-font-size16 work-together"
+                style="font-family: Dosis-Bold; font-weight: 800"
+              >
+                GALACxIS Lab Young Scholars Program
+              </h6>
+              <p
+                class="font-size16 sm-font-size15 line-height-28 sm-line-height-26"
+                style="text-align: justify; font-family: Dosis-SemiBold"
+              >
+                The GALACxIS Young Scholars Program is a high-school research
+                outreach initiative designed to introduce motivated students to
+                university-level research in robotics, autonomy, and control
+                systems. Hosted by the GALACxIS Lab, the program provides
+                age-appropriate, mentored exposure to feedback control,
+                autonomous vehicles, robotic sensing, simulation, motion
+                planning, and experimental validation. Through supervised laboratory activities, demonstrations, and
+                project-based learning, students gain insight into how engineers
+                design intelligent systems that perceive, decide, and act in
+                uncertain environments. The program aims to inspire the next
+                generation of engineers and researchers through a supportive,
+                structured, and professionally supervised university research
+                experience.
+              </p>
+             
             </div>
 
             <div class="col-md-6 sm-margin-30px-bottom">
@@ -1232,13 +1244,9 @@
                 class="font-size16 sm-font-size15 line-height-28 sm-line-height-26"
                 style="text-align: justify; font-family: Dosis-SemiBold"
               >
-                Current University of Cincinnati graduate and undergraduate
+                Current UC graduate and undergraduate
                 students interested in joining the lab should first review the
-                lab's research areas and recent publications. Students with
-                preparation in mathematics, dynamics, control systems,
-                programming, simulation, robotics, or aerospace systems are
-                welcome to reach out with a concise description of their
-                interests and relevant background.
+                lab's research areas and recent publications. Students should have a strong mathematical background, particularly in linear algebra, differential equations, signals and systems, and control. Prior exposure to graph theory, optimization, game theory, distributed algorithms, robotics, autonomous systems, or scientific programming would be especially helpful. Students who fit this profile are welcome to contact Dr. Sinha with a concise description of their interests, relevant coursework, technical background, and any prior research, simulation, or hardware experience. Due to the volume of inquiries, responses may be limited to students whose preparation and interests align with current lab opportunities.
               </p>
             </div>
           </div>
@@ -1259,7 +1267,7 @@
                 most relevant to your interests, and what technical background
                 or skills you would bring to the group. Due to the number of
                 inquiries received, not every message can receive an immediate
-                response; carefully prepared and focused emails are much easier
+                response. Carefully prepared and focused emails are much easier
                 to review.
               </p>
             </div>
@@ -1272,7 +1280,10 @@
           >
         </div>
       </section>
-      <!-- end service section-->
+      <!-- end join us section-->
+
+
+
 
       <!-- start news section -->
       <section class="lg bg-light-sky position-relative" id="news">
@@ -1280,228 +1291,8 @@
           <h3 class="h3">News and Announcements</h3>
           <div class="row">
             <div class="col-md-12">
-              <div id="news-slider8" class="owl-carousel">
-                <!-- <div class="post-slide8">
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <p>M.S./Funded Ph.D. positions available</p>
-                    </h3>
-                    <p class="post-description">
-                      Masters (M.S.) and a funded Ph.D. position are available
-                      in the GALACxIS Laboratory at UC AEEM starting in
-                      Spring/Fall 2024.
-                      <a
-                        href="files/MS_PhD_2024_advertisement.pdf"
-                        target="_blank"
-                        style="color: red"
-                        >Click here for details.</a
-                      >
-                    </p>
-                  </div>
-                </div> -->
-
-                <div class="post-slide8">
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <p>Aug 2025</p>
-                    </h3>
-                    <p class="post-description">
-                      Welcome Abhimanyu as a doctoral candidate in the GALACxIS
-                      Lab.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="post-slide8">
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <p>Jul 2025</p>
-                    </h3>
-                    <p class="post-description">
-                      Started serving on the IEEE CSS Conference Editorial
-                      Board.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="post-slide8">
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <p>Jun 2025</p>
-                    </h3>
-                    <p class="post-description">
-                      Welcome Dr. Boyinine as a postdoctoral fellow in the
-                      GALACxIS Lab.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="post-slide8">
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <p>May 2025</p>
-                    </h3>
-                    <p class="post-description">
-                      Started serving as a guest Associate Editor of the IEEE
-                      Control Systems Letters.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="post-slide8">
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <p>Apr 2025</p>
-                    </h3>
-                    <p class="post-description">
-                      Gave a guest lecture on Cooperative GNC at AFIT, USA.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="post-slide8">
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <p>Jan 2025</p>
-                    </h3>
-                    <p class="post-description">
-                      Started serving as a track chair of Control, Robotic,
-                      Network, and System Sciences and Technologies at the IEEE
-                      WF-IoT 2025.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- <div class="post-slide8">
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <p>18 Dec 2023</p>
-                    </h3>
-                    <p class="post-description">
-                      I am joining the University of Cincinnati as an Assistant
-                      Professor in the Department of Aerospace Engineering and
-                      Engineering Mechanics.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="post-slide8">
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <p>25 Aug 2023</p>
-                    </h3>
-                    <p class="post-description">
-                      Multiple papers accepted at the AIAA Guidance, Navigation,
-                      and Control Conference (AIAA SciTech Forum), 2024.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="post-slide8">
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <p>26 Aug 2022</p>
-                    </h3>
-                    <p class="post-description">
-                      Multiple papers accepted at the AIAA Guidance, Navigation,
-                      and Control Conference (AIAA SciTech Forum), 2023.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="post-slide8">
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <p>20 Aug 2022</p>
-                    </h3>
-                    <p class="post-description">
-                      I am awarded the Prestigious Naik and Rastogi Award for
-                      Excellence in Ph.D. Research at IITB.
-                    </p>
-                  </div>
-                </div> -->
-
-                <!-- <div class="post-slide8">
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <p>06 Jun 2022</p>
-                    </h3>
-                    <p class="post-description">
-                      Our JGCD paper "A Nonlinear Guidance Law for Target
-                      Enclosing with Arbitrary Smooth Shapes" is now accepted.
-                    </p>
-                  </div>
-                </div> -->
-
-                <!-- <div class="post-slide8">
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <p>01 Dec 2021</p>
-                    </h3>
-                    <p class="post-description">
-                      Starting a new postdoctoral research position at the
-                      University of Texas at San Antonio, USA.
-                    </p>
-                  </div>
-                </div> -->
-
-                <!-- <div class="post-slide8">
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <p>19 January 2021</p>
-                    </h3>
-                    <p class="post-description">
-                      Presenting our paper "Integrated Guidance and Control for Dual Control
-                      Interceptors under Impact Time Constraint" in the AIAA Scitech Virtual Event.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="post-slide8">
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <p>1 December 2020</p>
-                    </h3>
-                    <p class="post-description">
-                      Our LCSS paper "Cooperative Salvo Based Active Aircraft Defense Using Impact 
-                      Time Guidance" is now online.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="post-slide8">
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <p>1 December 2020</p>
-                    </h3>
-                    <p class="post-description">
-                      Our paper "Three-Dimensional Guidance With Terminal Time Constraints for Wide Launch Envelops" is now online.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="post-slide8">
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <p>24 November 2020</p>
-                    </h3>
-                    <p class="post-description">
-                      Our paper "Three-Dimensional Nonlinear Cooperative Salvo Using Event-Triggered Strategy" is now online.
-                    </p>
-                  </div>
-                </div> -->
-
-                <!-- <div class="post-slide8">
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <p>23 October 2020</p>
-                    </h3>
-                    <p class="post-description">
-                      Submitted my Ph.D. thesis titled "Cooperative Nonlinear Guidance and Control Using Impact Time"
-                    </p>
-                                   <a href="#" class="read-more">read more</a> this line was commented earlier. comment after uncommenting this div.
-                  </div>
-                </div> -->
+              <div id="news-slider8" class="galacxis-news-carousel">
+                <div class="galacxis-news-track" aria-live="polite"></div>
               </div>
             </div>
           </div>
@@ -1677,5 +1468,100 @@
 
     <!-- custom scripts -->
     <script src="js/main.js"></script>
+  
+    <script>
+      (function () {
+        const newsSource = "news.html";
+        const numberOfItems = 5;
+        const slider = document.getElementById("news-slider8");
+        if (!slider) return;
+
+        const track = slider.querySelector(".galacxis-news-track");
+        if (!track) return;
+
+        let currentIndex = 0;
+        let timerId = null;
+
+        function cleanText(text) {
+          return text.replace(/\s+/g, " ").trim();
+        }
+
+        function getVisibleCount() {
+          if (window.innerWidth <= 600) return 1;
+          if (window.innerWidth <= 980) return 2;
+          return 3;
+        }
+
+        function updateSlidePosition() {
+          const visibleCount = getVisibleCount();
+          const maxIndex = Math.max(0, numberOfItems - visibleCount);
+          currentIndex = Math.min(currentIndex, maxIndex);
+          track.style.transform = "translateX(-" + currentIndex * (100 / visibleCount) + "%)";
+        }
+
+        function startCarousel() {
+          if (timerId) window.clearInterval(timerId);
+          timerId = window.setInterval(function () {
+            const visibleCount = getVisibleCount();
+            const maxIndex = Math.max(0, numberOfItems - visibleCount);
+            currentIndex = currentIndex >= maxIndex ? 0 : currentIndex + 1;
+            updateSlidePosition();
+          }, 5000);
+        }
+
+        function buildCard(dateText, descriptionHTML) {
+          return `
+            <div class="galacxis-news-item">
+              <div class="post-slide8">
+                <div class="post-content">
+                  <h3 class="post-title">
+                    <p>${dateText}</p>
+                  </h3>
+                  <p class="post-description">
+                    ${descriptionHTML}
+                  </p>
+                </div>
+              </div>
+            </div>
+          `;
+        }
+
+        fetch(newsSource)
+          .then(function (response) {
+            if (!response.ok) throw new Error("Could not load news.html");
+            return response.text();
+          })
+          .then(function (htmlText) {
+            const parser = new DOMParser();
+            const newsDocument = parser.parseFromString(htmlText, "text/html");
+            const newsItems = Array.from(
+              newsDocument.querySelectorAll("#content ul li")
+            ).slice(0, numberOfItems);
+
+            const cards = newsItems.map(function (item) {
+              const itemClone = item.cloneNode(true);
+              const dateNode = itemClone.querySelector("b");
+              let dateText = "News";
+
+              if (dateNode) {
+                dateText = cleanText(dateNode.textContent).replace(/:$/, "");
+                dateNode.remove();
+              }
+
+              const descriptionHTML = itemClone.innerHTML.replace(/\s+/g, " ").trim();
+              return buildCard(dateText, descriptionHTML);
+            });
+
+            track.innerHTML = cards.join("");
+            updateSlidePosition();
+            startCarousel();
+          })
+          .catch(function (error) {
+            console.error("Recent news could not be loaded:", error);
+          });
+
+        window.addEventListener("resize", updateSlidePosition);
+      })();
+    </script>
   </body>
 </html>
