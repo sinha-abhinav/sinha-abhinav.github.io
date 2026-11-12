@@ -297,25 +297,27 @@
             class="no-margin-bottom"
             style="font-family: Dosis-SemiBold; text-decoration: underline"
           >
-            Distributed Safe Consensus Under Input, State, and Output
-            Constraints
+            Networked Admissibility Preserving Control
           </h5>
 
           <p style="text-align: justify; font-size: 18px">
-            We develop a control-theoretic framework for distributed safe
-            consensus of networked autonomous agents subject to simultaneous
-            input, state, and output constraints. The motivating problem arises
-            in multi-agent cyber-physical systems where agents must coordinate
-            over a communication graph while respecting actuator limits,
-            maintaining admissible internal behavior, and ensuring that measured
-            or task-relevant outputs remain inside prescribed safety envelopes.
-            The main theoretical contribution is a unified closed-loop analysis
-            showing that, for compact admissible sets of initial conditions, the
-            proposed controller simultaneously guarantees input admissibility,
-            forward invariance of the prescribed state/output safe set,
-            boundedness of all closed-loop signals, completeness of solutions,
-            and asymptotic synchronization to a designer-selected admissible
-            reference trajectory embedded within the agents' common safe set.
+            We develop networked Admissibility-Preserving Control (APC) methods
+            that allow autonomous agents to coordinate while respecting input,
+            state, and output constraints. In multi-agent cyber-physical
+            systems, local feedback and information exchanged over a
+            communication graph must support a collective objective while
+            keeping each agent within its actuator limits and prescribed safety
+            envelopes. Our designs connect admissibility at the agent level with
+            safe coordination across the network, including directed
+            interactions and time-critical agreement. For compatible compact
+            sets of initial conditions, the closed-loop analysis establishes
+            input admissibility, forward invariance of the prescribed
+            state/output safe set, boundedness of all closed-loop signals,
+            completeness of solutions, and asymptotic or prescribed-time
+            agreement, according to the coordination design. Under the
+            corresponding compatibility conditions, reference-tracking designs
+            synchronize the agents to a designer-selected admissible trajectory
+            within their common safe set.
           </p>
 
           <figure>
@@ -324,10 +326,10 @@
               style="width: 50%; margin-left: 33%"
             />
             <figcaption style="text-align: left; font-weight: bold">
-              Set-based illustration of the proposed safe-consensus framework.
-              Each agent $i$ operates within its individual admissible set
-              $\mathcal{X}_i(t)$, all of which reside within the broader state
-              space $\mathcal{S}(t)$. The common safe core $\Omega(t)$ is
+              Set-based illustration of networked admissibility-preserving
+              control. Each agent $i$ operates within its individual admissible
+              set $\mathcal{X}_i(t)$, all of which reside within the broader
+              state space $\mathcal{S}(t)$. The common safe core $\Omega(t)$ is
               assumed to lie strictly inside the mutual intersection
               $\bigcap_i\mathcal{X}_i(t)$. Coordination ensures the network
               converges to a synchronized reference $x^\star(t)\in\Omega(t)$.
@@ -339,11 +341,29 @@
           </p>
           <ul>
             <li style="list-style-type: disc; margin-left: 20px">
+              <b>Abhinav Sinha</b>, Lohitvel Gopikannan, Saurabh Kumar, and
+              Shashi Ranjan Kumar, "Prescribed-Time Admissibility-Preserving
+              Control over Rooted Digraphs", <i>Preprint</i>.
+            </li>
+            <li style="list-style-type: disc; margin-left: 20px">
+              <b>Abhinav Sinha</b>, Lohitvel Gopikannan, and Shashi Ranjan
+              Kumar,
+              <a href="https://arxiv.org/abs/2609.09384" target="_blank">
+                "Networked Admissibility-Preserving Control for Directed Safe
+                Coordination"</a
+              >, <i>arXiv:2609.09384</i>, 2026.
+            </li>
+            <li style="list-style-type: disc; margin-left: 20px">
               <b>Abhinav Sinha</b>, and Shashi Ranjan Kumar,
               <a href="https://arxiv.org/abs/2606.16116" target="_blank">
                 "Distributed Safe Consensus Under Asymmetric Input and
                 Time-Varying Output Constraints"</a
-              >, <i>arXiv 2606.16116</i>, 2026.
+              >, <i>arXiv:2606.16116</i>, 2026.
+            </li>
+            <li style="list-style-type: disc; margin-left: 20px">
+              Saurabh Kumar, Shashi Ranjan Kumar, and <b>Abhinav Sinha</b>,
+              "Admissibility-Preserving Cooperative Salvo Guidance for Active
+              Aircraft Defense", <i>Preprint</i>.
             </li>
           </ul>
 
